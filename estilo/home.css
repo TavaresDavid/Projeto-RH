@@ -382,7 +382,7 @@ footer p{
   
 
   
-@media screen and (max-width: 768px) { /* Estilos padrão para telas menores (smartphones) */
+@media screen and (min-width: 768px) { /* Estilos padrão para telas menores (smartphones) */
   
   body{
     margin: 0;
