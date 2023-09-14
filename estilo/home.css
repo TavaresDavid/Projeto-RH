@@ -53,6 +53,22 @@ header {
   background-color: var(--dark-color);
   padding: 1rem 2rem;
 }
+
+#burguer{
+  background-color: rgb(41, 41, 41);
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#burguer:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
 .company-logo {
   font-size: 2.5rem;
   background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
@@ -367,27 +383,80 @@ footer p{
 
   
 @media screen and (max-width: 768px) { /* Estilos padrão para telas menores (smartphones) */
- 
-  header { 
-    display: block;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-color);
-    
+  
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
+  
+  /* ================= VARIÁVEIS ================ */
+  :root {
+    --primary-color: hsl(9, 94%, 61%);
+    --primary-color-alt: hsl(28, 72%, 83%);
+    --second-color: #3e537c;
+    --second-color-alt: hsla(220, 33%, 36%, 65%);
+    --third-color: hsl(220, 36%, 28%);
+    --white-color: #fbfbfb;
+    --white-color-alt: hsl(12, 14%, 93%);
+    --dark-color: hsl(300, 100%, 0%);
+  }
+  
+  /* ================= BASE ==================== */
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .bx {
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  
+  /* -- BODY -- */
+  body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    background-color: var(--white-color);
+  }
+
+
+
+
+
+  header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-color);
+
+  }
+
   .company-logo {
     display: none;
     font-size: 2.5rem;
     background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 55px;
+
   }
   .nav-items {
       display: flex;
-      margin-right: 50px;
+      margin-left: 20px;
+      width: 420px;
+    
   }
   .nav-item {
+    border: 1px solid rgb(123, 0, 0);
+    padding: 3px;
+    border-radius: 15px;
     margin: 0 2rem;
   }
   .nav-link {
@@ -426,32 +495,35 @@ footer p{
   }
   
   .section-1 {
+     margin-top: -130px;
      background-color:rgb(0, 0, 0);
-     display: flex; 
+     display: block; 
      justify-content: space-around;
      width: 100%;
-     min-height: 572px;
+     min-height: 685px;
      max-height: 762px;
     }
   
     .home-computer-container{
-      display: none;
-      margin-top: 120px;
-      margin-bottom: 100px;
-      width: 500px;
+      display: flex;
+      margin-bottom: 50px;
+      width: 400px;
       box-shadow: 1px 0px 100px 10px #3e537c;
-      height: 300px;
-      margin-left: -100px;
+      height: 200px;
+      margin-left: 5px;
       border-radius: 10px;
+      
     }
   
     .home-computer{
       border-radius: 10px;
+      
     }
   
     .slogan{
+      text-align: justify;
       margin-top: 130px;
-      width: 620px;
+      width: 400px;
       height: 300px;
       
     }
@@ -460,7 +532,7 @@ footer p{
       background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top: -100px;
+      padding-top: 20px;
       text-align: center;
       font-size: 1.5rem;
       font-weight: 600;
@@ -474,14 +546,15 @@ footer p{
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top: 1rem;
+      margin-top: 2rem;
       font-size: 1.2rem;
       font-weight: 400;
       line-height: 1.8rem;
+      margin-left: 7px ;
     }
   
     .company-slogan1{
-      
+      margin-left: 7px ;
       color: rgb(110, 110, 110);
       margin-top: 1rem;
       font-size: 16px;
@@ -498,15 +571,20 @@ footer p{
   
     .foco{
       line-height: 40px;
-      width: 600px;
-      margin-bottom: 70px;
-      margin-left: 90px;
+      width: 400px;
+      margin-bottom: 50px;
+      margin-left: 40px;
+    }
+
+    .foco h2{
+      font-size: 1.3em;
     }
    
   
-  hr{
-    width: 72em;
-  }
+    hr{
+    width: 25em;
+    }
+
     .linha{
       display: flex;
       justify-content: center;
@@ -523,18 +601,19 @@ footer p{
     .imagem{
       background-color: rgba(0, 0, 0, 0.345);
       background-size: cover;
-      background-attachment: fixed; 
-      padding-top: 10vh;
-      padding-bottom: 10vh;
+      background-attachment: ; 
+      padding-top: 4vh;
+      padding-bottom: 4vh ;
       line-height: 1.8em;
-      padding-left: 30px;
-      font-size: 20px; 
+      padding-left: 20px;
+      font-size: 18px; 
       border-radius: 20px;
   }
   
   .p1{
+    text-align: left;
     margin:auto;
-    width: 900px;
+    width: 320px;
     color: rgb(250, 250, 250);
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 1px  #000000;
@@ -550,7 +629,7 @@ footer p{
   #img01{
       background-image: url('../imagens/01.jpg'); /* Tag para adicionar a imagem*/
       background-position: right center ; /* Posição da imagem, no caso ( centralizado à direita*/
-      width: 1160px;
+      width: 400px;
       margin: auto;
   }
   
@@ -561,16 +640,21 @@ footer p{
   }
   
   .interat{
-    width: 600px;
-    font-size: 20px;
-    line-height: 1.8em;
+    width: 400px;
+    font-size: 16px;
+    line-height: 1.3em;
     text-align: left;
     margin-bottom: 40px;
     margin-top: 20px;
     background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 50px;
+    margin-left: -8px;
+  }
+
+  .interat p{
+    font-size: 16px;
+    margin-top: 12px;
   }
   
   /* CARD */
@@ -578,16 +662,17 @@ footer p{
   section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 70px;
     padding: 50px 50px 70px 50px;
   }
   
   .card {
-    width: min(100%, 500px);
+    width: 128px ;
     background: rgba(255, 255, 255);
     border-radius: 16px;
     font-family: "Poppins", sans-serif;
-    z-index: 5;
+    z-index:5 ;
+    margin-left: -60px;
   }
   
   .card > img {
@@ -613,11 +698,12 @@ footer p{
   
   .card-content > p {
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .card-content > p:nth-child(1) {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 600px;
     margin-bottom: 10px;
     color: #1e40af;
   }
@@ -630,27 +716,30 @@ footer p{
   
   .input-container{
     text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
   
   .input{
     padding: 20px;
-    width: 25rem;
+    width: 15rem;
     border-radius: 10px;
     background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 1px solid white;
+    height: 15px;
   }
   
   button{
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    width: 9rem;
+    width: 8rem;
     background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border: 2px solid rgb(126, 21, 21);
-      
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid rgb(126, 21, 21);
+    height: 3.2em;
   }
   
   button:hover{
@@ -671,7 +760,7 @@ footer p{
   
   .material-icons{
     margin-left: 10px;
-    margin-top: 4px;
+    margin-top: -6px;
     background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
