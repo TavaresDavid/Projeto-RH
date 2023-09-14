@@ -371,6 +371,7 @@ footer p{
   header { 
     display: block;
     align-items: center;
+    justify-content: center;
     background-color: var(--dark-color);
     
   }
