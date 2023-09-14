@@ -390,6 +390,7 @@ footer p{
 
     body{
       width: 483px;
+      overflow-x: hidden;
     }
   header { 
     justify-content: center;
