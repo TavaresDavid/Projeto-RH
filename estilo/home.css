@@ -389,7 +389,7 @@ footer p{
   /* ================= VARIÁVEIS ================ */
 
     body{
-      width: 483px;
+      width: 100%;
       overflow-x: hidden;
     }
   header { 
