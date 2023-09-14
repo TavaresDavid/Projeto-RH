@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+
+*,*::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS ================ */
+:root {
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  
+}
+
+header{
+  max-width: 13rem;
+  text-align: left;
+  display: flex;
+  padding:10px;
+  margin-left: 90px;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  font-weight: normal;
+  border: 1px solid rgb(59, 0, 0);
+  padding: 7px;
+  padding-right: 15px;
+  border-radius: 20px;
+}
+
+.company-home{
+  background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 3px;
+}
+
+i{
+  color: white;
+}
+
+a:hover{
+  border: 1px solid rgb(73, 73, 73);
+}
+
+.nocc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    margin-top: 120px;
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    margin-left: -100px;
+}
+
+img{
+    height: 200px;
+}
+
+.imagem{
+    margin-top: 60px;
+}
+
+.sec1{
+    height: 190px;
+  }
+  
+  .titulo-text h1{
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    width: 800px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .titulo-text p{
+    margin-top: -40px;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+    width: 900px;
+    margin-left: 100px;
+  }
+  
+  hr{
+    width: 72em;
+  }
+  
+  abbr{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .linha2{
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .sec2{
+    height: 450px;
+  }
+
+  aside{
+    width: 72em;
+    height: 410px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    box-shadow: 1px 1px 40px 5px rgb(69, 69, 69);
+  }
+
+  .atend{
+    margin-top: 60px;
+  }
+
+  .atend h2{
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
+  .subt{
+    color: rgb(177, 177, 177);
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+  .contate{
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+
+  .hr{
+    margin-top: 15px;
+    color: rgb(177, 177, 177);
+  }
+
+  .email{
+    margin-top: 60px;
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+
+  tr, th, td{
+    border: 2px solid rgb(93, 93, 93);
+    width: 15em;
+    padding: 5px;
+    color: rgb(238, 238, 238);
+  }
+
+  th{
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px 0px 0px 0px;
+  }
+
+  .sec3{
+    height: 90px;
+    
+  }
+
+  .final{
+    height: 100px;
+    width: 950px;
+    margin-left: 100px;
+  }
+
+  .finalp{
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+    margin-bottom: 5px;
+  }
+
+  .obgd{
+    line-height: 30px;
+    color: rgb(177, 177, 177);
+  }
+
+  strong{
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .linha3{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+   }
+
+   .footer{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color:#000000;
+    padding: 10px;
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10px;
+  }
+
+  
+

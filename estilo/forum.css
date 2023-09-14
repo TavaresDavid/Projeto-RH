@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+
+*,*::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ================= VARIÁVEIS ================ */
+:root {
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  background-color: black;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-logo {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+    margin-top: 3px;
+  }
+
+  .tema{
+    margin-right: 100px;
+    text-shadow: 1px 2px 10px rgb(167, 0, 0);
+    text-align: center;
+    margin-top: 13px;
+    font-size: 0.8rem;
+    width: 200px;
+    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  main{
+    height: 30em;
+    color: white;
+  }
+
+  main h1{
+    font-size: 40px;
+    text-align: center;
+    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+    margin-bottom: 65px;
+  }
+
+  .dados{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+  }
+
+  .mensagem{
+    min-height: 300px;
+    width: 400px;
+    margin-left: 50px;
+  }
+
+  .paragrafo p{
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+    width: 280px;
+  }
+
+  .p2{
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .paragrafo{
+    margin-left: -29px;
+  }
+
+  .paragrafo h3{
+    font-size: 1.9em;
+    text-align: left;
+    padding: 10px;
+  }
+
+  img{
+    height: 40px;
+    margin: 10px;
+  }
+
+  .formu{
+    width: 700px;
+    margin-right: 50px;
+    height: 350px;
+  }
+
+  form{
+    height: 200px;
+    text-align: center;
+    
+  }
+
+  input{
+    width: 600px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: black;
+    color: rgb(196, 196, 196);
+  }
+
+  .text1{
+   padding-bottom: 140px;
+   padding-top: 15px;
+   color: rgb(196, 196, 196);
+  }
+
+  button{
+    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 7px;
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 1px solid white;
+  }
+
+  .butt{
+    margin-left: -355px;
+  }
+
+  button:hover{
+    border: 1px solid rgb(104, 0, 0);
+    cursor: pointer;
+  }
+
+  footer{
+    padding: 5px;
+    justify-content: left;
+    display: flex;
+    margin-left: 100px;
+
+  }
+
+
+  footer p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(87, 0, 0);
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  footer p a{
+    text-decoration: none;
+    color: rgb(174, 174, 174);
+  }
+
+  footer p:hover{
+    border: 1px solid rgb(73, 73, 73);
+    cursor: pointer;
+  }
