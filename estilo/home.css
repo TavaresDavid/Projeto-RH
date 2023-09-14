@@ -384,59 +384,16 @@ footer p{
   
 @media screen and (max-width: 667px) { /* Estilos padrão para telas menores (smartphones) */
   
-  body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
+
   
   /* ================= VARIÁVEIS ================ */
-  :root {
-    --primary-color: hsl(9, 94%, 61%);
-    --primary-color-alt: hsl(28, 72%, 83%);
-    --second-color: #3e537c;
-    --second-color-alt: hsla(220, 33%, 36%, 65%);
-    --third-color: hsl(220, 36%, 28%);
-    --white-color: #fbfbfb;
-    --white-color-alt: hsl(12, 14%, 93%);
-    --dark-color: hsl(300, 100%, 0%);
-  }
-  
-  /* ================= BASE ==================== */
-  li {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .bx {
-    font-size: 2.5rem;
-  }
-  .container {
-    padding: 0 2rem;
-  }
-  
-  /* -- BODY -- */
-  body {
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    background-color: var(--white-color);
-  }
 
-
-
-
-
+    body{
+      width: 483px;
+    }
   header { 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--dark-color);
-
+    justify-content: center;
+    width: 483px;
   }
 
   .company-logo {
@@ -498,8 +455,8 @@ footer p{
      margin-top: -130px;
      background-color:rgb(0, 0, 0);
      display: block; 
-     justify-content: space-around;
-     width: 667px;
+    
+     width: 483px;
      min-height: 685px;
      max-height: 762px;
     }
@@ -567,6 +524,7 @@ footer p{
     .section-2{
       background-color: black;
       color: white;
+      width: 483px;
     }
   
     .foco{
@@ -637,6 +595,7 @@ footer p{
     background-color: rgb(0, 0, 0);
     color: white;
     display: block;
+    width: 483px;
   }
   
   .interat{
@@ -755,7 +714,7 @@ footer p{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    
+    width: 483px;
   }
   
   .material-icons{
