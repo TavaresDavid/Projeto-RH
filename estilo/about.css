@@ -23,17 +23,16 @@
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  background-color: black;
-  
+  background-color: rgb(255, 255, 255);
+  background-color: #000000;
 }
 
 header{
-  max-width: 20rem;
-  text-align: left;
+  max-width: 1300px;
+  width: 100%;
   display: flex;
-  padding: 30px;
-  margin-left: 60px;
-  
+  padding: 1rem;
+  justify-content: left;
 }
 
 a{
@@ -41,9 +40,9 @@ a{
   text-decoration: none;
   font-weight: normal;
   border: 1px solid rgb(59, 0, 0);
-  padding: 7px;
-  padding-right: 15px;
+  padding: .5rem;
   border-radius: 20px;
+  margin-left: 4rem;
 }
 
 a:hover{
@@ -51,7 +50,7 @@ a:hover{
 }
 
 #burguer{
-  font-size: 30px;
+  font-size: 2rem;
   color: white;
 }
 
@@ -60,17 +59,15 @@ a:hover{
   background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 5px;
-  margin-top: 0.5px;
+  margin-left: .1rem;
+  margin-top: 3px;
 }
 
-main{
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
 
 .sobre{
-  height: 641px;
+  width: 100%;
+  height: 100vh;
+  max-width: 1300px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -78,11 +75,10 @@ main{
 }
 
 .container-sobre{
-  margin-top: 110px;
+  margin-top: 10rem;
   line-height: 2.8em;
   font-size: 1.4rem;
-  height: 200px;
-  margin-left: 50px;
+  margin-left: 2.5rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,19 +87,24 @@ main{
 }
 
 .container-sobre h1{
-  font-size: 3.2em;
-  margin-top: 90px;
+  font-size: 3rem;
+  width: 50%;
+}
+
+.container-sobre p{
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 .imagem-about{
-  margin-top: 50px;
-  height: 200px;
+  width: 40%;
+  max-width: 1300px;
   border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .img1{
-  width: 600px;
-  height: 400px;
+  width: 100%;
   border-radius: 50px;
   box-shadow:  0px 0px 100px 50px #202020;
   
@@ -111,22 +112,23 @@ main{
 }
 
 .sobre1{
-  height: 900px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .titulo-text{
-  font-size: 1.5rem;
-  line-height: 1.7em;
-  width: 800px;
-  margin-left: 90px;
-  margin-bottom: 60px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 90%;
+  margin-left: 5.1rem;
+  margin-bottom: 4rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 hr{
-  width: 72em;
+  width: 87%;
 }
 
 abbr{
@@ -139,23 +141,22 @@ abbr{
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
 }
 
 .container-texto{
-  max-width: 72em;
+  width: 87%;
   margin: auto;
-  height: 43em;
   columns: 2;
   
 }
 
 .texto-sobre{
-  max-width: 72em;
-  font-size: 17px;
+  width: 100%;
+  font-size: 1.1rem;
   text-align: justify;
   line-height: 1.5em;
-  padding: 5px;
+  padding: .4rem;
   color: rgb(177, 173, 173);
 }
 
@@ -169,68 +170,332 @@ strong{
 .art-filos{
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 4rem;
+  color: rgb(197, 197, 197);
 }
 
 aside{
   display: flex;
-  width: 60rem;
-  height: 21.4em;
+  align-items: center;
+  width: 72%;
+  height: 61vh;
   justify-content: center;
   border: 1px solid rgb(255, 255, 255);
-  margin-top: 20px;
-  margin-bottom: 20px;
   box-shadow: 1px 0px 30px 10px #3e537c;
   border-radius: 10px;
 }
 
-.container-aside{
-  height: 300px;
-  margin-top: 20px;
-  
-}
 
 .aside-text{
-  font-size: 10px;
-  width: 500px;
-  height: 300px;
+  font-size: 1rem;
+  width: 52.5%;
+  height: 53.1vh;
   background-color: rgb(39, 39, 39);
-  margin-top: 20px;
   padding: 10px;
   border-radius: 0px 10px 10px 0px;
+  padding-left: 20px;
+}
+
+.container-aside{
+  width: 40%;
+  display: flex;
 }
 
 .imgfil{
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 53vh;
   border-radius: 10px 0px 0px 10px;
 }
 
 .h2f{
-  font-size: 25px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .filos{
-  font-size: 16px;
-  width: 400px;
+  font-size: 1rem;
+  width: 97%;
   font-weight: normal;
   margin: auto;
   line-height: 1.3em;
 }
 
 .footer{
-  margin-top: 30px;
+  margin-top: 2rem;
   text-align: center;
   color: white;
   background-color:#000000;
-  padding: 10px;
+  padding: 1.2rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10px;
+  font-size: .6rem;
+}
+
+
+@media (max-width: 1034px) {
+  html{
+    font-size: 75%;
+  }
+
+  .sobre{
+    height: 70vh;
+    width: 100%;
+  }
+
+  .aside-text{
+    font-size: 1.2rem;
+  }
+
+  .filos{
+    font-size: 1.2rem;
+  }
+
+  .footer{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    background-color:#000000;
+    padding: 1.2rem;
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+
+  header{
+    width: 100%;
+    justify-content: center;
+    margin-left: -3rem;
+    margin-bottom: 2rem;
+  }
+
+  .sobre{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-sobre{
+    font-size: 1.3rem;
+  }
+
+  .container-sobre{
+    text-align: center;
+    margin: auto;
+  }
+
+  .container-sobre h1{
+    text-align: center;
+    width: 100%;
+  }
+
+  .titulo-text h1{
+    display: none;
+  }
+
+  .titulo-text p{
+    margin-top: 5rem;
+    width: 96% ;
+    font-size: 2.5rem;
+    text-align: center;
+
+  }
+
+  .imagem-about{
+    width: 40%;
+  }
+
+  aside{
+    width: 80%;
+  }
+}
+
+@media (max-width: 912px) {
+  .filos{
+    font-size: 1.2rem ;
+  }
+
+}
+
+@media (max-width: 834px) {
+  
+  header{
+    width: 100%;
+    justify-content: center;
+    margin-left: -2rem;
+    margin-bottom: 2rem;
+  }
+
+  .imagem-about{
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+
+  .filos{
+    font-size: 1.2rem ;
+  }
+
+  aside{
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  aside{
+    display: block;
+    width: 80%;
+    height: 103.5vh;
+  }
+  .container-aside{
+    width: 100%;
+  }
+
+  .aside-text{
+    width: 100%;
+    height: 50vh;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .imgfil{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .h2f{
+    text-align: center;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2rem;
+  }
+  
+  .filos{
+    text-align: justify;
+    font-size: 1.3rem;
+    width: 97%;
+    font-weight: normal;
+    margin: auto;
+    line-height: 1.3em;
+  }
+}
+
+@media (max-width: 700px) {
+    .titulo-text p{
+      margin-left: -10px;
+    }
+
+    .imagem-about{
+      width: 50%;
+      margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 600px){
+
+  .h2f{
+    font-size: 1.8rem;
+  }
+
+  .titulo-text p{
+    margin-left: -10px;
+  }
+
+  .imagem-about{
+    width: 70%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .container-texto{
+    columns: auto;
+  }
+
+  .aside-text{
+    height: 63vh;
+  }
+
+  .imgfil{
+    height: 40vh;
+  }
+
+  .titulo-text p{
+    margin-left: -2rem;
+  }
+
+  .texto-sobre{
+    font-size: 1.2rem;
+  }
+
+  .filos{
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (max-width: 472px) {
+
+
+  .aside-text{
+    height: 63vh;
+  }
+
+  .imagem-about{
+    width: 80%;
+  }
+
+  .container-sobre p{
+    font-size: 1.2rem;
+    margin-bottom: -15px;
+  }
+
+  .titulo-text p{
+    font-size: 2rem;
+  }
+
+  .filos{
+    font-size: 1.2rem;
+  }
+
+  .h2f{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 374px) {
+  
+  .container-sobre P, h1{
+    font-size: 1.1rem;
+  }
+
+  .imgfil{
+    height: 30vh;
+  }
+
+  .aside-text{
+    height: 73vh;
+  }
+  
+  h2f{
+    font-size: 1rem;
+  }
+
+  .filos{
+    font-size: 1.1rem;
+  }
+
+  .titulo-text p{
+    font-size: 1.5rem;
+    margin-top: -1px;
+  }
+
 }
