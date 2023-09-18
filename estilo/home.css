@@ -553,6 +553,13 @@ footer p{
       width: 80%;
     }
 
+    .titulo-foco{
+      margin-left: -22px;
+    }
+    .foco h2{
+      margin-left:  -20px;
+    }
+
     .foco{
       margin-top: 100px;
     }  
