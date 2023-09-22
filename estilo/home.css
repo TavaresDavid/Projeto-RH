@@ -391,6 +391,10 @@ footer p{
       margin-top: -50px;
       margin-bottom: -50px;
     }
+
+    .foco{
+      margin-left: 10px;
+    }
   }
 
   @media (max-width: 960px){
@@ -418,8 +422,6 @@ footer p{
     .company-slogan1{
       font-size: 1.2rem;
     }
-
-    
 
     .foco {
       margin-top: 30px;
@@ -545,6 +547,16 @@ footer p{
       width: 85%;
       height: 3.9rem;
     }
+
+    .foco{
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+
   }
 
   @media (max-width: 400px) {
@@ -554,10 +566,7 @@ footer p{
     }
 
     .titulo-foco{
-      margin-left: -22px;
-    }
-    .foco h2{
-      margin-left:  -20px;
+      
     }
 
     .foco{
@@ -590,7 +599,7 @@ footer p{
     .foco{
       margin-bottom: 40px;
       margin-top: 150px;
-      max-width: 300px;
+      
     }
 
     .foco h2{
@@ -612,8 +621,6 @@ footer p{
     .foco{
       margin-bottom: 40px;
       margin-top: 150px;
-      max-width: 90%;
-      margin-left: -10px;
     }
 
     .foco h2{
