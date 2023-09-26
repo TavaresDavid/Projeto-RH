@@ -570,3 +570,19 @@ aside{
   }
 
 }
+
+@media (max-width: 330px) {
+  header{
+    margin-bottom: -140px;
+  }
+
+  .container-sobre{
+    margin-top: -220px;
+    margin-bottom: -140px;
+  }
+
+  .filos{
+    font-size: 1.2rem;
+  }
+
+}
