@@ -27,33 +27,71 @@ body {
   background-color: #000000;
 }
 
+header { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: var(--dark-color);*/
+  margin-top: 15px;
+  margin-bottom: -10px;
+  width: 100%;
+  max-width: 1300px;
+}
 
-
-.company-home {
-  font-size: 1.3rem;
+.company-logo {
+  font-size: 2.5rem;
   background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: .1rem;
-  margin-top: 3px;
+  padding-left: 4rem;
+
+}
+
+.nav-items {
+    display: flex;
+    
+}
+.nav-item {
+  margin: 0 2rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+  background: -webkit-linear-gradient(var(--primary-color-alt),var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link::before {
+  content: "";
+  background: linear-gradient(var(--primary-color), var(--primary-color-alt));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 150ms;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 
 .sobre{
   width: 100%;
   height: 100vh;
-  max-width: 1300px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  
 }
 
 .container-sobre{
   margin-top: 10rem;
   line-height: 2.8em;
   font-size: 1.4rem;
-  margin-left: 2.5rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +101,7 @@ body {
 
 .container-sobre h1{
   font-size: 3rem;
-  width: 50%;
+  width: 100%;
 }
 
 .container-sobre p{
@@ -72,34 +110,38 @@ body {
 }
 
 .imagem-about{
-  width: 40%;
-  max-width: 1300px;
+  width: 35%;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .img1{
   width: 100%;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow:  0px 0px 100px 50px #202020;
-  
-  
+    
 }
 
 .sobre1{
   width: 100%;
-  max-width: 1300px;
 }
 
 .titulo-text{
   font-size: 1.2rem;
   line-height: 2rem;
-  width: 90%;
-  margin-left: 5.1rem;
+  width: 100%;
   margin-bottom: 4rem;
   background: -webkit-linear-gradient(120deg,var(--primary-color-alt),var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.titulo-text h1{
+  margin-left: 5rem;
+}
+
+.titulo-text p{
+  margin-left: 5rem;
 }
 
 hr{
@@ -143,6 +185,7 @@ strong{
 }
 
 .art-filos{
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 4rem;
@@ -172,7 +215,7 @@ aside{
 }
 
 .container-aside{
-  width: 40%;
+  width: 42%;
   display: flex;
 }
 
@@ -210,10 +253,20 @@ aside{
   font-size: .6rem;
 }
 
+@media (max-width: 1220px) {
+  html{
+    font-size: 90%;
+  }
+
+  .sobre{
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+}
 
 @media (max-width: 1034px) {
   html{
-    font-size: 75%;
+    font-size: 80%;
   }
 
   .sobre{
@@ -246,9 +299,11 @@ aside{
 
   header{
     width: 100%;
-    justify-content: center;
-    margin-left: -3rem;
-    margin-bottom: 2rem;
+    justify-content: space-around;
+  }
+
+  .imagem-about{
+    margin-bottom: 25px;
   }
 
   .sobre{
@@ -275,8 +330,9 @@ aside{
   }
 
   .titulo-text p{
-    margin-top: 5rem;
-    width: 96% ;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0;
     font-size: 2.5rem;
     text-align: center;
 
@@ -293,19 +349,13 @@ aside{
 
 @media (max-width: 912px) {
   .filos{
-    font-size: 1.2rem ;
+    font-size: 1.1rem ;
   }
 
 }
 
-@media (max-width: 834px) {
+@media (max-width: 840px) {
   
-  header{
-    width: 100%;
-    justify-content: center;
-    margin-left: -2rem;
-    margin-bottom: 2rem;
-  }
 
   .imagem-about{
     width: 45%;
@@ -318,6 +368,12 @@ aside{
 
   aside{
     width: 90%;
+  }
+}
+
+@media (max-width: 807px) {
+  .filos{
+    font-size: 1.1rem;
   }
 }
 
@@ -363,9 +419,10 @@ aside{
 }
 
 @media (max-width: 700px) {
-    .titulo-text p{
-      margin-left: -10px;
-    }
+
+  html{
+    font-size: 70%;
+  }
 
     .imagem-about{
       width: 50%;
@@ -379,17 +436,21 @@ aside{
     font-size: 1.8rem;
   }
 
-  .titulo-text p{
-    margin-left: -10px;
-  }
-
   .imagem-about{
     width: 70%;
     margin-bottom: 4rem;
   }
+  
 }
 
 @media (max-width: 540px) {
+
+  .company-logo{
+    display: none;
+  }
+  header{
+    font-size: 2rem;
+  }
 
   .container-texto{
     columns: auto;
@@ -403,9 +464,6 @@ aside{
     height: 40vh;
   }
 
-  .titulo-text p{
-    margin-left: -2rem;
-  }
 
   .texto-sobre{
     font-size: 1.2rem;
@@ -438,7 +496,7 @@ aside{
   }
 
   .filos{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .h2f{
@@ -446,10 +504,29 @@ aside{
   }
 }
 
+@media (max-width: 428px) {
+  .filos{
+    font-size: 1.3rem;
+  }
+
+  .container-sobre{
+    margin-bottom: -30px;
+  }
+}
+
 @media (max-width: 374px) {
   
   .container-sobre P, h1{
     font-size: 1.1rem;
+  }
+
+  header{
+    margin-bottom: -80px;
+  }
+
+  .container-sobre{
+    margin-top: -90px;
+    margin-bottom: -70px;
   }
 
   .imgfil{
@@ -460,17 +537,14 @@ aside{
     height: 73vh;
   }
   
-  h2f{
-    font-size: 1rem;
-  }
 
   .filos{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .titulo-text p{
     font-size: 1.5rem;
-    margin-top: -1px;
+    
   }
 
 }
