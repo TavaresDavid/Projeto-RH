@@ -512,6 +512,28 @@ aside{
   .container-sobre{
     margin-bottom: -30px;
   }
+
+  header{
+    margin-bottom: -60px;
+  }
+
+  .container-sobre{
+    margin-top: -40px;
+    margin-bottom: -60px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  header{
+    margin-bottom: -110px;
+  }
+
+  .container-sobre{
+    margin-top: -140px;
+    margin-bottom: -100px;
+  }
+
 }
 
 @media (max-width: 374px) {
