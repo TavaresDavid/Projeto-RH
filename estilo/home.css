@@ -577,6 +577,7 @@ footer p{
 
     .home-computer-container{
       width: 80%;
+      margin-bottom: -10px;
     }
 
     .foco h2{
@@ -611,11 +612,6 @@ footer p{
     i{
       font-size: 1.5rem;
       margin-left: 5px;
-    }
-
-    .company-title{
-      margin-top: 20px;
-      margin-bottom: 30px;
     }
 
     .foco h2{
