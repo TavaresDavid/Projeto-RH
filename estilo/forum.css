@@ -26,63 +26,81 @@ body {
   background-color: black;
 }
 
-header{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+header { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  padding: 1rem 2rem;
+  width: 100%;
 }
 
 .company-logo {
-    font-size: 2.5rem;
-    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 100px;
-    margin-top: 3px;
-  }
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 1.5rem;
 
-  .tema{
-    margin-right: 100px;
-    text-shadow: 1px 2px 10px rgb(167, 0, 0);
-    text-align: center;
-    margin-top: 13px;
-    font-size: 0.8rem;
-    width: 200px;
-    background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+}
+
+.nav-items {
+    display: flex;
+    
+}
+.nav-item {
+  margin: 0 2rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+  background: -webkit-linear-gradient(var(--primary-color-alt),var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-link::before {
+  content: "";
+  background: linear-gradient(var(--primary-color), var(--primary-color-alt));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 150ms;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
   main{
-    height: 30em;
+    width: 100%;
+    
     color: white;
   }
 
   main h1{
-    font-size: 40px;
+    font-size: 2.8rem;
+    width: 100%;
     text-align: center;
     background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 60px;
-    margin-bottom: 65px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .dados{
     display: flex;
-    justify-content: space-around;
-    margin-left: 50px;
-  }
-
-  .mensagem{
-    min-height: 300px;
-    width: 400px;
-    margin-left: 50px;
+    justify-content: space-around; 
   }
 
   .paragrafo p{
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: .6rem;
     text-align: justify;
     width: 280px;
   }
@@ -92,40 +110,31 @@ header{
     margin-bottom: 10px;
   }
 
-  .paragrafo{
-    margin-left: -29px;
-  }
-
   .paragrafo h3{
     font-size: 1.9em;
-    text-align: left;
     padding: 10px;
   }
 
   img{
-    height: 40px;
-    margin: 10px;
+    height: 8vh;
+    margin: .6rem;
   }
 
   .formu{
-    width: 700px;
-    margin-right: 50px;
-    height: 350px;
+    width: 50%;
   }
 
   form{
-    height: 200px;
+    width: 100%;
     text-align: center;
-    
   }
 
   input{
-    width: 600px;
-    height: 40px;
+    width: 92%;
     margin-top: 10px;
     padding: 10px;
     border: 2px solid rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: rgb(196, 196, 196);
   }
 
@@ -139,16 +148,12 @@ header{
     background: -webkit-linear-gradient( 120deg, var(--primary-color-alt), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 7px;
-    width: 120px;
-    margin-top: 10px;
+    padding: .5rem;
+    width: 46%;
+    margin-top: .5rem;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid white;
-  }
-
-  .butt{
-    margin-left: -355px;
   }
 
   button:hover{
@@ -156,30 +161,98 @@ header{
     cursor: pointer;
   }
 
-  footer{
-    padding: 5px;
-    justify-content: left;
-    display: flex;
-    margin-left: 100px;
+  @media (max-width: 950px) {
+      html{
+        font-size: 80%;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .dados{
+      justify-content: center;
+      align-items: center; 
+      flex-direction: column;
+    }
+
+    .mensagem{
+      width: 90%;
+    }
+
+    .paragrafo{
+      width: 100%;
+      text-align: center;
+     
+    }
+
+    .paragrafo h3{
+      font-size: 3rem;
+    }
+
+    .paragrafo p{
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .formu{
+      width: 90%;
+    }
 
   }
 
+  @media (max-width: 550px) {
+    main h1{
+      font-size: 2rem;
+    }
 
-  footer p {
-    font-size: 15px;
-    text-align: center;
-    color: white;
-    border: 1px solid rgb(87, 0, 0);
-    width: 150px;
-    border-radius: 10px;
+    .paragrafo h3{
+      margin-top: -30px;
+      font-size: 2rem;
+    }
+    .paragrafo p{
+      font-size: 1.3rem;
+    }
   }
 
-  footer p a{
-    text-decoration: none;
-    color: rgb(174, 174, 174);
+  @media (max-width: 472px) {
+    html{
+      font-size: 60%;
+    }
   }
 
-  footer p:hover{
-    border: 1px solid rgb(73, 73, 73);
-    cursor: pointer;
+  @media (max-width: 356px) {
+    .company-logo{
+      display: none;
+    }
+    header{
+      justify-content: center;
+    }
+    li{
+      font-size: 1rem;
+    }
   }
+
+  @media (max-width: 300px) {
+
+    html{
+      font-size: 55%;
+    }
+
+    main h1{
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 268px) {
+    html{
+      font-size: 50%;
+    }
+
+    img{
+      width: 15%;
+      height: 7vh;
+    }
+  }
+
+
+
