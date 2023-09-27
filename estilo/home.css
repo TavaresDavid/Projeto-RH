@@ -512,10 +512,12 @@ footer p{
 
     .home-computer-container{
       width: 65%;
+      margin-bottom: -20px;
+      margin-top: -40px;
     }
 
     .foco{
-      margin-top: 100px;
+      margin-top: 25px;
     }
 
     .company-logo{
