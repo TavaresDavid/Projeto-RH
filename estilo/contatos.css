@@ -381,14 +381,6 @@ img{
     
   }
 
-  @media (max-width: 414px) {
-    .final{
-      margin-top: -230px;
-    }
-  }
-
-
-
   @media (max-width: 476px) {
     html{
       font-size: 65%;
